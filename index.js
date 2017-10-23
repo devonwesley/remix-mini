@@ -1,14 +1,9 @@
-if (typeof web3 !== 'undefined') {
-  web3 = new Web3(web3.currentProvider)
-} else {
-  // set the provider you want from Web3.providers
-  web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
-}
-
-if (!web3.isConnected())
-  console.log("not connected");
-else
-  console.log("connected");
+// if (typeof web3 !== 'undefined') {
+//   web3 = new Web3(web3.currentProvider)
+// } else {
+//   // set the provider you want from Web3.providers
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+// }
 
 let optimize = 1
 let compiler

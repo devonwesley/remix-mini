@@ -5,6 +5,11 @@ if (typeof web3 !== 'undefined') {
   web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
 }
 
+if (!web3.isConnected())
+  console.log("not connected");
+else
+  console.log("connected");
+
 let optimize = 1
 let compiler
 let compiledContract

@@ -1,14 +1,25 @@
+const path = require('path');
 module.exports = {
-  entry: {
-    app: ["./app/main.js"]
-  },
+  entry: './src/index.js',
   output: {
-    path: __dirname + "/dist",
-    filename: "bundle.js"
+    path: path.resolve('dist'),
+    filename: 'bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: "babel-loader", query: { presets: ['react', 'env'] } }
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: { presets: ['react', 'env'] }
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
     ]
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, "dist")
   }
 }

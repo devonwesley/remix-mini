@@ -1,7 +1,7 @@
 # Dippy
 
 A solidity contract compiler modeled after [Remix](https://remix.ethereum.org/).
-View it live [here](#).
+View it live [here](http://dj-mc.herokuapp.com/).
 
 ### CONTRIBUTING
 

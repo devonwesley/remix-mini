@@ -1,56 +1,9 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-  <title>Test Page</title>
-  <link rel="stylesheet" href="css/mui.min.css">
-</head>
-
-<body>
-  <div class="mui-appbar">
-    <div class="mui-container">
-      <div class="mui-select">
-        <select id="versions"></select>
-      </div> 
-    </div>
-  </div>
-
-  <div class="mui-container-fluid">
-    <br />
-    <div class="mui-col-md-5 mui-panel">
-      <div id="deployed-contract"></div>
-    </div>
-    <div class="mui-row">
-      <div class="mui-col-md-7">
-        <div class="mui-panel">
-          <p style="font-size:25px; font-weight:bold">
-            Compile Contract
-          </p>
-          <textarea id="source" onclick="this.select()" style="height:360px; width: 600px; display:block; margin-left:20px"></textarea>
-          <button class="mui-btn mui-btn--primary">
-            Compile
-          </button>
-        </div>
-      </div>
-
-      <div class="mui-col-md-5">
-        <div class="mui-panel">
-          <p id="status" style="float:right; margin-top:20px"></p>
-          <p style="font-size:25px; font-weight:bold">Output:</p>
-          <p id="estimated-gas"></p>
-          <textarea id="compile-output" onclick="this.select()" style="width:445px; height:360px;" readonly></textarea>
-          <button onclick="deployContract()" class="mui-btn mui-btn--primary">
-            Deploy
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mui-container" id="contractFunction"></div>
-
-  <script src="libs/solc.min.js" type="text/javascript"></script>
-  <script src="libs/web3.min.js" type="text/javascript"></script>
-  <script src="index.js" type="text/javascript"></script>
-</body>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+      <div id="root"></div>
+      <script type="text/javascript" src="dist/bundle.js" charset="utf-8"></script>
+    </body>
 </html>

@@ -4,7 +4,7 @@
   "description": "A remix style stolidity explorer.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack && webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Jusdev89/contract-deployment#readme",
   "dependencies": {
+    "muicss": "^0.9.28",
     "path": "^0.12.7",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"

@@ -4,7 +4,7 @@
   "description": "A remix style stolidity explorer.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && webpack-dev-server"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",

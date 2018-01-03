@@ -1,20 +1,22 @@
-# Dippy
+# Dj Dippy
 
 A solidity contract compiler modeled after [Remix](https://remix.ethereum.org/).
-View it live [here](http://dj-mc.herokuapp.com/).
+
+![Go DJ!!](assets/godj.png)
 
 ### RUN
 Clone or fork the repository.
 
 ```bash
-$ npm i -g ethereumjs-testrpc
-$ npm i
+$ npm install --global ganache-cli
+$ npm install
 ```
 ```bash
-$ testrpc
+$ ganache-cli -u 0
 
-# in another terminal tab
+# in a new terminal window
 $ npm start
+$ open index.html
 ```
 
 ### CONTRIBUTING

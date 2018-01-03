@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import './App.css'
-import { Appbar, Button, Container, Option, Select} from 'muicss/react';
+import { Appbar, Button, Container, Option, Select} from 'muicss/react'
+import Compiler from './compile_contract/Compiler'
 
 // TODO:
     // - write function that creates options, should be a list of available versions of solidity for compiler: https://www.muicss.com/docs/v1/react/select
@@ -14,6 +15,7 @@ export default class App extends Component {
           <Select>
             <Option id="versions" value="option1" label="Option 1" />
           </Select>
+          <Compiler />
         </Container>
       </Appbar>
     )

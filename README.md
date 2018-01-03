@@ -16,7 +16,6 @@ $ ganache-cli -u 0
 
 # in a new terminal window
 $ npm start
-$ open index.html
 ```
 
 ### CONTRIBUTING
